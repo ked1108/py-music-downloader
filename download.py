@@ -23,3 +23,4 @@ def download(watchID, song, artist):
     title = os.getenv("USERPROFILE") + r"\Music\\" + audio.title + '.m4a'
     best.download(os.getenv("USERPROFILE") + r"\Music", quiet=True)
     st.search(title, artist, song)
+    return title
