@@ -20,7 +20,7 @@ def parseResults():
 def download(watchID, song, artist):
     audio = pafy.new(watchID)
     best = audio.getbestaudio(preftype='m4a')
-    title = os.getenv("USERPROFILE") + r"\Music\\" + audio.title + '.m4a'
+    title = os.getenv("USERPROFILE") + "\Music\\" + audio.title + '.m4a'
     best.download(os.getenv("USERPROFILE") + r"\Music", quiet=True)
     st.search(title, artist, song)
     return title
