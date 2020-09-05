@@ -52,4 +52,6 @@ download.grid(row=3, column=0, columnspan=2, padx=7, pady=10)
 
 root['background'] = "#f5f6f7"
 root.resizable(0, 0)
+root.iconbitmap('Icon.ico')
+root.title("Py Music Downloader!")
 root.mainloop()
